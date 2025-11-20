@@ -1,0 +1,1792 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELE B1 - Guía Completa de Preparación</title>
+    <style>
+        :root {
+  /* Primitive Color Tokens */
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-teal-800: rgba(41, 150, 161, 1);
+  --color-red-400: rgba(255, 84, 89, 1);
+  --color-red-500: rgba(192, 21, 47, 1);
+  --color-orange-400: rgba(230, 129, 97, 1);
+  --color-orange-500: rgba(168, 75, 47, 1);
+
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-red-500-rgb: 192, 21, 47;
+  --color-red-400-rgb: 255, 84, 89;
+  --color-orange-500-rgb: 168, 75, 47;
+  --color-orange-400-rgb: 230, 129, 97;
+
+  --color-bg-1: rgba(59, 130, 246, 0.08);
+  --color-bg-2: rgba(245, 158, 11, 0.08);
+  --color-bg-3: rgba(34, 197, 94, 0.08);
+  --color-bg-4: rgba(239, 68, 68, 0.08);
+  --color-bg-5: rgba(147, 51, 234, 0.08);
+  --color-bg-6: rgba(249, 115, 22, 0.08);
+  --color-bg-7: rgba(236, 72, 153, 0.08);
+  --color-bg-8: rgba(6, 182, 212, 0.08);
+
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-cream-50);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+  --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+
+  --focus-ring: 0 0 0 3px var(--color-focus-ring);
+  --focus-outline: 2px solid var(--color-primary);
+
+  --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+
+  --radius-sm: 6px;
+  --radius-base: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-400-rgb: 119, 124, 124;
+    --color-teal-300-rgb: 50, 184, 198;
+    --color-gray-300-rgb: 167, 169, 169;
+    --color-gray-200-rgb: 245, 245, 245;
+
+    --color-bg-1: rgba(29, 78, 216, 0.15);
+    --color-bg-2: rgba(180, 83, 9, 0.15);
+    --color-bg-3: rgba(21, 128, 61, 0.15);
+    --color-bg-4: rgba(185, 28, 28, 0.15);
+    --color-bg-5: rgba(107, 33, 168, 0.15);
+    --color-bg-6: rgba(194, 65, 12, 0.15);
+    --color-bg-7: rgba(190, 24, 93, 0.15);
+    --color-bg-8: rgba(8, 145, 178, 0.15);
+
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-primary: var(--color-teal-300);
+    --color-primary-hover: var(--color-teal-400);
+    --color-primary-active: var(--color-teal-800);
+    --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+    --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+    --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-error: var(--color-red-400);
+    --color-success: var(--color-teal-300);
+    --color-warning: var(--color-orange-400);
+    --color-info: var(--color-gray-300);
+    --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+    --color-btn-primary-text: var(--color-slate-900);
+    --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+  }
+}
+
+@font-face {
+  font-family: 'FKGroteskNeue';
+  src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2') format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: var(--line-height-normal);
+  padding: var(--space-16);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: var(--space-32);
+}
+
+h1 {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-8);
+  color: var(--color-text);
+}
+
+.subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-16);
+}
+
+.countdown {
+  display: inline-block;
+  background: var(--color-bg-1);
+  padding: var(--space-12) var(--space-24);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  border: 1px solid var(--color-card-border);
+}
+
+/* Tab Navigation */
+.tab-nav {
+  display: flex;
+  gap: var(--space-8);
+  margin-bottom: var(--space-24);
+  border-bottom: 2px solid var(--color-border);
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  background: transparent;
+  border: none;
+  padding: var(--space-12) var(--space-20);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease;
+  font-family: var(--font-family-base);
+}
+
+.tab-button:hover {
+  color: var(--color-text);
+  background: var(--color-secondary);
+}
+
+.tab-button.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Cards */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-24);
+  margin-bottom: var(--space-24);
+  box-shadow: var(--shadow-sm);
+}
+
+.card h2 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-16);
+  color: var(--color-text);
+}
+
+.card h3 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin-top: var(--space-24);
+  margin-bottom: var(--space-12);
+  color: var(--color-text);
+}
+
+.card p, .card li {
+  margin-bottom: var(--space-12);
+  line-height: 1.6;
+}
+
+.card ul {
+  padding-left: var(--space-20);
+}
+
+.card strong {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Info boxes */
+.info-box {
+  background: var(--color-bg-3);
+  border-left: 4px solid var(--color-success);
+  padding: var(--space-16);
+  border-radius: var(--radius-base);
+  margin: var(--space-16) 0;
+}
+
+.warning-box {
+  background: var(--color-bg-6);
+  border-left: 4px solid var(--color-warning);
+  padding: var(--space-16);
+  border-radius: var(--radius-base);
+  margin: var(--space-16) 0;
+}
+
+/* Quiz Section */
+.quiz-section {
+  margin-top: var(--space-32);
+  padding-top: var(--space-32);
+  border-top: 2px solid var(--color-border);
+}
+
+.question-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-24);
+  margin-bottom: var(--space-20);
+}
+
+.question-number {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  margin-bottom: var(--space-8);
+}
+
+.question-text {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--space-20);
+  color: var(--color-text);
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.option-button {
+  background: var(--color-secondary);
+  border: 2px solid var(--color-border);
+  padding: var(--space-16);
+  border-radius: var(--radius-base);
+  text-align: left;
+  font-size: var(--font-size-base);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: var(--font-family-base);
+  color: var(--color-text);
+  font-weight: var(--font-weight-medium);
+}
+
+.option-button:hover:not(:disabled) {
+  background: var(--color-secondary-hover);
+  border-color: var(--color-primary);
+}
+
+.option-button.correct {
+  background: rgba(34, 197, 94, 0.15);
+  border-color: var(--color-success);
+  color: var(--color-success);
+  font-weight: var(--font-weight-semibold);
+}
+
+.option-button.incorrect {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: var(--color-error);
+  color: var(--color-error);
+}
+
+.option-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.explanation {
+  margin-top: var(--space-16);
+  padding: var(--space-16);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+}
+
+.explanation.correct {
+  background: rgba(34, 197, 94, 0.1);
+  border-left: 4px solid var(--color-success);
+  color: var(--color-text);
+}
+
+.explanation.incorrect {
+  background: rgba(239, 68, 68, 0.1);
+  border-left: 4px solid var(--color-error);
+  color: var(--color-text);
+}
+
+.explanation strong {
+  display: block;
+  margin-bottom: var(--space-8);
+  font-size: var(--font-size-lg);
+}
+
+.explanation.correct strong {
+  color: var(--color-success);
+}
+
+.explanation.incorrect strong {
+  color: var(--color-error);
+}
+
+/* Resources Section */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-16);
+  margin-top: var(--space-16);
+}
+
+.resource-card {
+  background: var(--color-bg-2);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-20);
+  text-align: center;
+}
+
+.resource-card h4 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-8);
+  color: var(--color-text);
+}
+
+.resource-card p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-12);
+}
+
+.resource-card a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+}
+
+.resource-card a:hover {
+  text-decoration: underline;
+}
+
+/* Oral Section Styles */
+.oral-nav {
+  display: flex;
+  gap: var(--space-8);
+  margin-bottom: var(--space-24);
+  flex-wrap: wrap;
+  padding: var(--space-12);
+  background: var(--color-bg-1);
+  border-radius: var(--radius-lg);
+}
+
+.oral-nav-button {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: var(--space-8) var(--space-16);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  cursor: pointer;
+  border-radius: var(--radius-base);
+  transition: all 0.2s ease;
+  font-family: var(--font-family-base);
+}
+
+.oral-nav-button:hover {
+  background: var(--color-secondary-hover);
+  border-color: var(--color-primary);
+}
+
+.oral-nav-button.active {
+  background: var(--color-primary);
+  color: var(--color-btn-primary-text);
+  border-color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.oral-content {
+  display: none;
+}
+
+.oral-content.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+.theme-card {
+  background: var(--color-bg-3);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-20);
+  margin-bottom: var(--space-20);
+}
+
+.structure-box, .example-box, .expressions-box, .questions-box, .dialogue-example, .tips-box, .scenario-box, .vocab-grid {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-base);
+  padding: var(--space-16);
+  margin-top: var(--space-16);
+}
+
+.structure-box strong, .example-box strong, .expressions-box strong, .scenario-box strong {
+  display: block;
+  margin-bottom: var(--space-12);
+  color: var(--color-primary);
+  font-size: var(--font-size-lg);
+}
+
+.example-box p {
+  margin-bottom: var(--space-8);
+  line-height: 1.7;
+}
+
+.expressions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-12);
+  margin-top: var(--space-12);
+}
+
+.expressions-grid div, .vocab-grid div {
+  padding: var(--space-8);
+  background: var(--color-bg-2);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+}
+
+.question-item {
+  background: var(--color-bg-5);
+  border-left: 4px solid var(--color-primary);
+  padding: var(--space-16);
+  margin-bottom: var(--space-16);
+  border-radius: var(--radius-base);
+}
+
+.question-item strong {
+  display: block;
+  margin-bottom: var(--space-8);
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+}
+
+.question-item p {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.dialogue-line {
+  padding: var(--space-12);
+  margin-bottom: var(--space-12);
+  border-radius: var(--radius-base);
+  border-left: 4px solid transparent;
+}
+
+.dialogue-line.examiner {
+  background: var(--color-bg-7);
+  border-left-color: var(--color-warning);
+}
+
+.dialogue-line.candidate {
+  background: var(--color-bg-1);
+  border-left-color: var(--color-primary);
+}
+
+.dialogue-line strong {
+  display: block;
+  margin-bottom: var(--space-4);
+  font-weight: var(--font-weight-semibold);
+}
+
+.photo-card {
+  background: var(--color-bg-4);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-20);
+  margin-bottom: var(--space-20);
+}
+
+.photo-placeholder {
+  box-shadow: var(--shadow-md);
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+  padding: var(--space-24);
+}
+
+.description-example {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-base);
+  padding: var(--space-16);
+  margin-top: var(--space-16);
+}
+
+.description-example strong {
+  display: block;
+  margin-bottom: var(--space-12);
+  color: var(--color-primary);
+  font-size: var(--font-size-lg);
+}
+
+.description-example p {
+  margin-bottom: var(--space-8);
+  line-height: 1.7;
+}
+
+.structure-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.step {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-left: 4px solid var(--color-primary);
+  padding: var(--space-12);
+  border-radius: var(--radius-sm);
+}
+
+.roleplay-card {
+  background: var(--color-bg-6);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-20);
+  margin-bottom: var(--space-20);
+}
+
+.vocab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-12);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tab-nav {
+    flex-direction: column;
+  }
+  
+  .tab-button {
+    border-bottom: none;
+    border-left: 3px solid transparent;
+  }
+  
+  .tab-button.active {
+    border-bottom: none;
+    border-left-color: var(--color-primary);
+  }
+
+  .oral-nav {
+    flex-direction: column;
+  }
+
+  .expressions-grid, .vocab-grid {
+    grid-template-columns: 1fr;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 DELE B1 - Guía Completa</h1>
+            <p class="subtitle">Preparación Integral para el Examen</p>
+            <div class="countdown" id="countdown">Cargando...</div>
+        </header>
+
+        <!-- Tab Navigation -->
+        <nav class="tab-nav">
+            <button class="tab-button active" data-tab="resumen">📋 Resumen</button>
+            <button class="tab-button" data-tab="lectura">📖 Lectura</button>
+            <button class="tab-button" data-tab="auditiva">🎧 Auditiva</button>
+            <button class="tab-button" data-tab="escritura">✍️ Escritura</button>
+            <button class="tab-button" data-tab="oral">🗣️ Oral</button>
+            <button class="tab-button" data-tab="recursos">📚 Recursos</button>
+        </nav>
+
+        <!-- Tab: Resumen -->
+        <div class="tab-content active" id="tab-resumen">
+            <div class="card">
+                <h2>📋 Resumen General del DELE B1</h2>
+                <p>El examen DELE B1 evalúa tu capacidad de comunicarte en español en situaciones cotidianas. Se divide en <strong>4 pruebas principales</strong>:</p>
+                
+                <h3>🔍 Estructura del Examen</h3>
+                <ul>
+                    <li><strong>Prueba 1 - Comprensión de Lectura:</strong> 70 minutos, 5 tareas, 30 preguntas</li>
+                    <li><strong>Prueba 2 - Comprensión Auditiva:</strong> 40 minutos, 5 tareas, 30 preguntas</li>
+                    <li><strong>Prueba 3 - Expresión e Interacción Escritas:</strong> 60 minutos, 2 tareas</li>
+                    <li><strong>Prueba 4 - Expresión e Interacción Orales:</strong> 15 min preparación + 15 min examen</li>
+                </ul>
+
+                <div class="info-box">
+                    <strong>💡 Información Importante:</strong>
+                    <p>Necesitas <strong>mínimo 30 puntos de 50</strong> en cada grupo de pruebas para aprobar. El examen se realiza en <strong>dos días diferentes</strong>: Día 1 (Lectura, Escritura, Auditiva) y Día 2 (Oral).</p>
+                </div>
+
+                <h3>✅ Consejos Generales</h3>
+                <ul>
+                    <li>📅 <strong>Practica con regularidad:</strong> Al menos 30 minutos diarios</li>
+                    <li>📝 <strong>Familiarízate con el formato:</strong> Conoce las tareas de cada prueba</li>
+                    <li>⏱️ <strong>Gestiona tu tiempo:</strong> Practica con cronómetro</li>
+                    <li>🎯 <strong>Lee las instrucciones:</strong> Entiende qué se pide en cada tarea</li>
+                    <li>🧘 <strong>Mantén la calma:</strong> La ansiedad reduce tu rendimiento</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tab: Lectura -->
+        <div class="tab-content" id="tab-lectura">
+            <div class="card">
+                <h2>📖 Prueba 1: Comprensión de Lectura</h2>
+                <p><strong>Duración:</strong> 70 minutos | <strong>Tareas:</strong> 5 | <strong>Preguntas:</strong> 30</p>
+
+                <h3>📊 Estructura de las Tareas</h3>
+                <ul>
+                    <li><strong>Tarea 1:</strong> Relacionar 6 textos breves con 6 personas (información específica)</li>
+                    <li><strong>Tarea 2:</strong> Leer 4 textos y responder 6 preguntas de múltiple elección</li>
+                    <li><strong>Tarea 3:</strong> Leer un texto y completar 6 huecos con frases</li>
+                    <li><strong>Tarea 4:</strong> Reconstruir un texto eligiendo 6 de 8 fragmentos</li>
+                    <li><strong>Tarea 5:</strong> Leer un texto y responder 6 preguntas de múltiple elección</li>
+                </ul>
+
+                <div class="info-box">
+                    <strong>⏱️ Gestión del Tiempo:</strong>
+                    <p>Distribuye aproximadamente <strong>14 minutos por tarea</strong> (70 min ÷ 5 tareas). Deja tiempo para revisar al final.</p>
+                </div>
+
+                <h3>💡 Estrategias Clave</h3>
+                <ul>
+                    <li>📋 <strong>Lee las preguntas primero:</strong> Sabrás qué información buscar</li>
+                    <li>🔍 <strong>Busca palabras clave:</strong> Números, nombres, fechas, lugares</li>
+                    <li>📝 <strong>Subraya información importante:</strong> Ayuda a localizar respuestas rápidamente</li>
+                    <li>🔗 <strong>Identifica conectores:</strong> "sin embargo", "además", "por lo tanto"</li>
+                    <li>⚠️ <strong>No traduzcas todo:</strong> Enfócate en entender la idea general</li>
+                    <li>✅ <strong>Elimina opciones incorrectas:</strong> Si dudas, descarta lo que no tiene sentido</li>
+                </ul>
+
+                <div class="warning-box">
+                    <strong>⚠️ Errores Comunes:</strong>
+                    <ul>
+                        <li>Leer todo el texto sin saber qué buscar</li>
+                        <li>Quedarse atascado en palabras desconocidas</li>
+                        <li>No gestionar bien el tiempo entre tareas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Quiz Section for Lectura -->
+            <div class="quiz-section">
+                <div class="card">
+                    <h2>📝 Questiones Reales - Lectura</h2>
+                    <p style="margin-bottom: 24px; color: var(--color-text-secondary);">5 textos auténticos con preguntas tipo examen DELE B1. Lee el texto y responde.</p>
+                    
+                    <div id="lectura-quiz"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Auditiva -->
+        <div class="tab-content" id="tab-auditiva">
+            <div class="card">
+                <h2>🎧 Prueba 2: Comprensión Auditiva</h2>
+                <p><strong>Duración:</strong> 40 minutos | <strong>Tareas:</strong> 5 | <strong>Preguntas:</strong> 30</p>
+
+                <h3>📊 Estructura de las Tareas</h3>
+                <ul>
+                    <li><strong>Tarea 1:</strong> 6 conversaciones breves + 6 preguntas de opción múltiple</li>
+                    <li><strong>Tarea 2:</strong> 6 mensajes/anuncios + 6 preguntas</li>
+                    <li><strong>Tarea 3:</strong> Una conversación + 6 preguntas</li>
+                    <li><strong>Tarea 4:</strong> 6 noticias de radio + 6 preguntas</li>
+                    <li><strong>Tarea 5:</strong> Una entrevista/conversación + 6 preguntas</li>
+                </ul>
+
+                <div class="info-box">
+                    <strong>🎯 Importante:</strong>
+                    <p>Cada audio se escucha <strong>DOS VECES</strong>. Primera escucha: idea general. Segunda escucha: detalles y confirmación.</p>
+                </div>
+
+                <h3>💡 Estrategias Clave</h3>
+                <ul>
+                    <li>📖 <strong>Lee las preguntas ANTES:</strong> Sabrás qué información escuchar</li>
+                    <li>📝 <strong>Toma notas rápidas:</strong> Palabras clave, números, nombres</li>
+                    <li>🎯 <strong>Primera escucha:</strong> Idea general y contexto</li>
+                    <li>🔍 <strong>Segunda escucha:</strong> Confirma detalles específicos</li>
+                    <li>⏭️ <strong>No te bloquees:</strong> Si no entiendes algo, sigue escuchando</li>
+                    <li>🧠 <strong>Usa el contexto:</strong> La situación te ayuda a deducir significados</li>
+                </ul>
+
+                <div class="warning-box">
+                    <strong>⚠️ Errores Comunes:</strong>
+                    <ul>
+                        <li>No leer las preguntas antes del audio</li>
+                        <li>Intentar escribir oraciones completas (no hay tiempo)</li>
+                        <li>Bloquearse con una palabra desconocida</li>
+                        <li>No usar la segunda escucha para verificar respuestas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Quiz Section for Auditiva -->
+            <div class="quiz-section">
+                <div class="card">
+                    <h2>📝 Questiones Reales - Auditiva</h2>
+                    <p style="margin-bottom: 24px; color: var(--color-text-secondary);">5 audios auténticos (transcripción incluida) con preguntas tipo examen DELE B1.</p>
+                    
+                    <div id="auditiva-quiz"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Escritura -->
+        <div class="tab-content" id="tab-escritura">
+            <div class="card">
+                <h2>✍️ Prueba 3: Expresión e Interacción Escritas</h2>
+                <p><strong>Duración:</strong> 60 minutos | <strong>Tareas:</strong> 2</p>
+
+                <h3>📊 Estructura de las Tareas</h3>
+                <ul>
+                    <li><strong>Tarea 1 - Interacción Escrita:</strong> Responder un correo electrónico (100-120 palabras)</li>
+                    <li><strong>Tarea 2 - Expresión Escrita:</strong> Escribir un blog/carta/comentario (150-200 palabras) - Eliges 1 de 2 opciones</li>
+                </ul>
+
+                <div class="info-box">
+                    <strong>⏱️ Gestión del Tiempo:</strong>
+                    <p><strong>Tarea 1:</strong> 20 minutos | <strong>Tarea 2:</strong> 35 minutos | <strong>Revisión:</strong> 5 minutos</p>
+                </div>
+
+                <h3>💡 Estrategias para Tarea 1 (Correo)</h3>
+                <ul>
+                    <li>✅ <strong>Responde TODAS las preguntas:</strong> Lee el correo con atención</li>
+                    <li>📧 <strong>Estructura:</strong> Saludo formal + párrafos (una idea por párrafo) + cierre</li>
+                    <li>🎯 <strong>Sé específico:</strong> Da detalles, ejemplos, razones</li>
+                    <li>📏 <strong>Respeta el límite:</strong> 100-120 palabras (cuenta mientras escribes)</li>
+                </ul>
+
+                <h3>💡 Estrategias para Tarea 2 (Blog/Carta/Comentario)</h3>
+                <ul>
+                    <li>📝 <strong>Elige el tema que dominas:</strong> Tienes 2 opciones</li>
+                    <li>🏗️ <strong>Planifica primero:</strong> 3-5 minutos de esquema</li>
+                    <li>📋 <strong>Estructura clara:</strong> Introducción + desarrollo (2-3 párrafos) + conclusión</li>
+                    <li>🔗 <strong>Usa conectores:</strong> "además", "sin embargo", "por lo tanto", "en primer lugar"</li>
+                    <li>📖 <strong>Varía tu vocabulario:</strong> No repitas las mismas palabras</li>
+                    <li>✏️ <strong>Revisa siempre:</strong> Ortografía, concordancia, acentos</li>
+                </ul>
+
+                <div class="warning-box">
+                    <strong>🔗 Conectores Útiles:</strong>
+                    <ul>
+                        <li><strong>Añadir:</strong> además, también, asimismo</li>
+                        <li><strong>Contrastar:</strong> sin embargo, no obstante, aunque, pero</li>
+                        <li><strong>Causa:</strong> porque, ya que, debido a</li>
+                        <li><strong>Consecuencia:</strong> por lo tanto, así que, en consecuencia</li>
+                        <li><strong>Ejemplificar:</strong> por ejemplo, como, tal como</li>
+                        <li><strong>Concluir:</strong> en conclusión, finalmente, en resumen</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Quiz Section for Escritura -->
+            <div class="quiz-section">
+                <div class="card">
+                    <h2>📝 Tareas Reales de Escritura con Respuestas Modelo</h2>
+                    <p style="margin-bottom: 24px; color: var(--color-text-secondary);">5 situaciones reales (emails, blogs, cartas) con respuestas modelo completas de 100-200 palabras.</p>
+                    
+                    <div id="escritura-quiz"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Oral -->
+        <div class="tab-content" id="tab-oral">
+            <!-- Oral Sub-Navigation -->
+            <div class="oral-nav">
+                <button class="oral-nav-button active" data-oral-tab="oral-intro">🔍 Introdução</button>
+                <button class="oral-nav-button" data-oral-tab="oral-tarea1">🎯 Tarea 1</button>
+                <button class="oral-nav-button" data-oral-tab="oral-tarea2">💬 Tarea 2</button>
+                <button class="oral-nav-button" data-oral-tab="oral-tarea3">🖼️ Tarea 3</button>
+                <button class="oral-nav-button" data-oral-tab="oral-tarea4">🎭 Tarea 4</button>
+            </div>
+
+            <!-- Oral Intro -->
+            <div class="oral-content active" id="oral-intro">
+                <div class="card">
+                    <h2>🗣️ Prueba 4: Expresión e Interacción Orales</h2>
+                    <p><strong>Preparación:</strong> 15 minutos | <strong>Examen:</strong> 12-15 minutos</p>
+
+                    <h3>📊 Estructura de las Tareas</h3>
+                    <ul>
+                        <li><strong>Tarea 1 - Presentación (2-3 min):</strong> Exposición sobre un tema preparado</li>
+                        <li><strong>Tarea 2 - Conversación (3-4 min):</strong> Diálogo con el examinador sobre el tema</li>
+                        <li><strong>Tarea 3 - Descripción (2-3 min):</strong> Describir una fotografía</li>
+                        <li><strong>Tarea 4 - Diálogo (3-4 min):</strong> Conversación informal sobre una situación</li>
+                    </ul>
+
+                    <div class="info-box">
+                        <strong>⏱️ Tiempo de Preparación (15 minutos):</strong>
+                        <p>Usa <strong>2 min leyendo</strong> → <strong>10 min escribiendo esquema</strong> → <strong>3 min practicando en voz baja</strong></p>
+                    </div>
+
+                    <h3>💡 Estrategias Generales</h3>
+                    <ul>
+                        <li>🗣️ <strong>Habla con claridad:</strong> No muy rápido, pronuncia bien</li>
+                        <li>❓ <strong>Si no entiendes:</strong> "¿Podrías repetir, por favor?"</li>
+                        <li>⏸️ <strong>Usa pausas naturales:</strong> No hay problema en pensar un momento</li>
+                        <li>😊 <strong>Muestra interés:</strong> Gestos, entonación, actitud positiva</li>
+                        <li>🔄 <strong>Reformula si te trabas:</strong> "Quiero decir que...", "Es decir..."</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <strong>🎯 Frases Útiles:</strong>
+                        <ul>
+                            <li><strong>Opinión:</strong> "En mi opinión...", "Creo que...", "Me parece que..."</li>
+                            <li><strong>Descripción:</strong> "Se ve que...", "Parece que...", "Hay..."</li>
+                            <li><strong>Ejemplos:</strong> "Por ejemplo...", "Como..."</li>
+                            <li><strong>Aclarar:</strong> "Es decir...", "Quiero decir..."</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box" style="margin-top: 24px;">
+                        <strong>👉 Use os botões acima para explorar cada Tarea com exemplos, imagens e diálogos!</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Oral Tarea 1 -->
+            <div class="oral-content" id="oral-tarea1">
+                <div class="card">
+                    <h2>🎯 Tarea 1: Presentación (2-3 min)</h2>
+                    <p><strong>Preparación:</strong> 15 minutos | <strong>Presentación:</strong> 2-3 minutos</p>
+
+                    <div class="info-box">
+                        <strong>📝 Lo que debes hacer:</strong>
+                        <p>Presentar un tema durante 2-3 minutos. Tienes 15 minutos para prepararte. Puedes escribir notas pero NO puedes leer todo el tiempo.</p>
+                    </div>
+
+                    <h3>🎭 Tema A: "Un país donde le gustaría vivir"</h3>
+                    <div class="theme-card">
+                        <strong>📌 Puntos que debes incluir:</strong>
+                        <ul>
+                            <li>✓ Qué país es</li>
+                            <li>✓ Por qué le gustaría vivir allí</li>
+                            <li>✓ Desde cuándo le gusta ese país</li>
+                            <li>✓ Qué es lo que más le gusta (clima, gente, cultura)</li>
+                            <li>✓ Qué es lo que menos le gusta</li>
+                            <li>✓ Qué le gustaría hacer allí</li>
+                            <li>✓ Cuándo y con quién le gustaría vivir allí</li>
+                        </ul>
+
+                        <div class="structure-box">
+                            <strong>🏛️ Estructura recomendada:</strong>
+                            <ol>
+                                <li><strong>Introducción (30 segundos):</strong> "Buenas tardes. Hoy voy a hablar sobre..."</li>
+                                <li><strong>Desarrollo (2 minutos):</strong> Explica los 7 puntos con ejemplos</li>
+                                <li><strong>Conclusión (30 segundos):</strong> "En conclusión, creo que..."</li>
+                            </ol>
+                        </div>
+
+                        <div class="example-box">
+                            <strong>🌟 Ejemplo de Presentación:</strong>
+                            <p><em>"Buenas tardes. Hoy voy a hablar sobre un país donde me gustaría vivir: Italia.</em></p>
+                            <p><em>Me gustaría vivir en Italia porque siempre he soñado con vivir cerca del mar Mediterráneo. Desde que era niño, Italia me fascina por su historia y cultura rica.</em></p>
+                            <p><em>Lo que más me gusta es el clima cálido en verano y la comida deliciosa. La gente italiana es muy amable y familiar. Sin embargo, lo que menos me gusta es que en algunas ciudades grandes hay mucho tráfico.</em></p>
+                            <p><em>Si viviera allí, me gustaría trabajar como profesor de español y en mi tiempo libre visitar museos y aprender italiano mejor.</em></p>
+                            <p><em>Me gustaría mudarme allí en 5 años, cuando termine mi carrera, probablemente con mi familia.</em></p>
+                            <p><em>En conclusión, creo que Italia sería el lugar perfecto para vivir por su cultura, clima y estilo de vida. Muchas gracias."</em></p>
+                        </div>
+
+                        <div class="expressions-box">
+                            <strong>💬 Expresiones útiles:</strong>
+                            <div class="expressions-grid">
+                                <div>• Me gustaría vivir en...</div>
+                                <div>• Siempre he soñado con...</div>
+                                <div>• Lo que más me atrae es...</div>
+                                <div>• Sin embargo, también...</div>
+                                <div>• En mi opinión...</div>
+                                <div>• En conclusión, creo que...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top: 32px;">🎭 Tema B: "Una experiencia memorable con amigos"</h3>
+                    <div class="theme-card">
+                        <strong>📌 Puntos que debes incluir:</strong>
+                        <ul>
+                            <li>✓ Cuándo fue</li>
+                            <li>✓ Dónde fue</li>
+                            <li>✓ Quiénes estaban contigo</li>
+                            <li>✓ Qué pasó</li>
+                            <li>✓ Por qué fue memorable</li>
+                            <li>✓ Cómo te sentiste</li>
+                            <li>✓ Si volverías a vivirla</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Oral Tarea 2 -->
+            <div class="oral-content" id="oral-tarea2">
+                <div class="card">
+                    <h2>💬 Tarea 2: Conversación con el Examinador (3-4 min)</h2>
+                    <p><strong>Duración:</strong> 3-4 minutos | <strong>Tipo:</strong> Diálogo sobre el tema de Tarea 1</p>
+
+                    <div class="info-box">
+                        <strong>📝 Lo que debes hacer:</strong>
+                        <p>El examinador hará preguntas relacionadas con el tema de tu presentación. Debes responder con detalle, dando ejemplos y explicaciones.</p>
+                    </div>
+
+                    <h3>💬 Preguntas Típicas del Examinador:</h3>
+                    <div class="questions-box">
+                        <div class="question-item">
+                            <strong>❓ "¿Cuándo fue la última vez que viajaste?"</strong>
+                            <p><em>Respuesta modelo:</em> "La última vez que viajé fue hace dos años, cuando fui a Barcelona con mi familia. Fue una experiencia increíble porque visitamos la Sagrada Familia y..."</p>
+                        </div>
+
+                        <div class="question-item">
+                            <strong>❓ "¿Con quién prefieres viajar?"</strong>
+                            <p><em>Respuesta modelo:</em> "Prefiero viajar con amigos porque podemos compartir experiencias y divertirnos juntos. Sin embargo, también me gusta viajar con mi familia de vez en cuando."</p>
+                        </div>
+
+                        <div class="question-item">
+                            <strong>❓ "¿Qué es lo más importante en un viaje?"</strong>
+                            <p><em>Respuesta modelo:</em> "En mi opinión, lo más importante es conocer la cultura local y probar la comida típica. Por ejemplo, cuando fui a México, me encantó..."</p>
+                        </div>
+
+                        <div class="question-item">
+                            <strong>❓ "¿Cuál es tu experiencia de viaje más especial?"</strong>
+                            <p><em>Respuesta modelo:</em> "Mi experiencia más especial fue cuando visité Roma. Me impactó ver el Coliseo en persona porque siempre había soñado con verlo desde niño."</p>
+                        </div>
+                    </div>
+
+                    <div class="dialogue-example">
+                        <h3>🎭 Diálogo Completo - Ejemplo:</h3>
+                        <div class="dialogue-line examiner">
+                            <strong>Examinador:</strong> "¿Por qué elegiste Italia como país donde te gustaría vivir?"
+                        </div>
+                        <div class="dialogue-line candidate">
+                            <strong>Candidato:</strong> "Elegí Italia porque desde pequeño me ha fascinado su cultura. Además, me encanta la comida italiana y el clima mediterráneo. Creo que sería un lugar perfecto para vivir."
+                        </div>
+                        <div class="dialogue-line examiner">
+                            <strong>Examinador:</strong> "¿Has visitado Italia alguna vez?"
+                        </div>
+                        <div class="dialogue-line candidate">
+                            <strong>Candidato:</strong> "Sí, visité Roma hace tres años. Fue una experiencia maravillosa. Recuerdo que visité el Coliseo y el Vaticano. La ciudad tiene mucha historia y arquitectura impresionante."
+                        </div>
+                        <div class="dialogue-line examiner">
+                            <strong>Examinador:</strong> "¿Qué diferencias crees que hay entre vivir en Italia y visitar como turista?"
+                        </div>
+                        <div class="dialogue-line candidate">
+                            <strong>Candidato:</strong> "Buena pregunta. Creo que vivir allí sería diferente porque tendría que aprender el idioma mejor y adaptarme a la vida cotidiana. Como turista solo ves lo bonito, pero vivir allí significa también trabajar, pagar facturas... Sin embargo, podría disfrutar de la cultura todos los días, no solo una semana."
+                        </div>
+                    </div>
+
+                    <div class="tips-box">
+                        <strong>💡 Consejos para Tarea 2:</strong>
+                        <ul>
+                            <li>✓ <strong>Da respuestas completas:</strong> No solo "Sí" o "No". Explica siempre.</li>
+                            <li>✓ <strong>Usa ejemplos personales:</strong> "Cuando yo...", "Una vez..."</li>
+                            <li>✓ <strong>Usa conectadores:</strong> "Además", "Sin embargo", "Por ejemplo"</li>
+                            <li>✓ <strong>Si no entiendes:</strong> "¿Podría repetir la pregunta, por favor?"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Oral Tarea 3 -->
+            <div class="oral-content" id="oral-tarea3">
+                <div class="card">
+                    <h2>🖼️ Tarea 3: Descripción de Fotografía (2-3 min)</h2>
+                    <p><strong>Duración:</strong> 2-3 minutos | <strong>Tipo:</strong> Describir una foto + responder preguntas</p>
+
+                    <div class="info-box">
+                        <strong>📝 Lo que debes hacer:</strong>
+                        <p>Eliges 1 de 2 fotos. Describes qué ves (lugar, personas, objetos, acciones). Luego el examinador hace preguntas sobre la foto.</p>
+                    </div>
+
+                    <h3>🏛️ Estructura de Descripción:</h3>
+                    <div class="structure-steps">
+                        <div class="step">1️⃣ <strong>Introducción:</strong> "En esta imagen puedo ver..."</div>
+                        <div class="step">2️⃣ <strong>Lugar:</strong> "Están en un parque / una oficina / una playa..."</div>
+                        <div class="step">3️⃣ <strong>Personas:</strong> "Hay una familia / unos trabajadores... El hombre lleva..."</div>
+                        <div class="step">4️⃣ <strong>Objetos:</strong> "Veo un banco / computadoras / árboles..."</div>
+                        <div class="step">5️⃣ <strong>Acciones:</strong> "Parece que están disfrutando / trabajando / hablando..."</div>
+                        <div class="step">6️⃣ <strong>Hipótesis:</strong> "Probablemente sea un fin de semana porque..."</div>
+                    </div>
+
+                    <h3 style="margin-top: 32px;">🖼️ Opción A: Familia en el Parque</h3>
+                    <div class="photo-card">
+                        <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 300px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px; margin-bottom: 16px;">
+                            🏞️ IMAGEN: Familia en un parque - 2 adultos y 1 niño, banco, árboles, día soleado
+                        </div>
+
+                        <div class="description-example">
+                            <strong>🌟 Ejemplo de Descripción Completa:</strong>
+                            <p><em>"En esta imagen puedo ver a una familia que está disfrutando de un día en el parque.</em></p>
+                            <p><em><strong>Lugar:</strong> Están en un parque muy bonito. Es un lugar al aire libre con mucha naturaleza. Veo árboles grandes al fondo y el cielo está azul, así que parece que hace buen tiempo.</em></p>
+                            <p><em><strong>Personas:</strong> Hay tres personas: un hombre, una mujer y un niño pequeño. El hombre lleva una camisa azul y pantalón negro. La mujer lleva un vestido de verano. El niño parece tener unos 5 años.</em></p>
+                            <p><em><strong>Objetos:</strong> Veo un banco de madera donde están sentados. También hay una pelota en el suelo, probablemente del niño.</em></p>
+                            <p><em><strong>Acciones:</strong> Parece que están hablando y riendo. Se ven muy felices y relajados. El niño está jugando cerca de sus padres.</em></p>
+                            <p><em><strong>Hipótesis:</strong> Creo que probablemente sea un fin de semana porque la familia tiene tiempo libre para estar junta. Tal vez sea por la tarde porque el sol no está muy fuerte."</em></p>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top: 32px;">🖼️ Opción B: Oficina con Trabajadores</h3>
+                    <div class="photo-card">
+                        <div class="photo-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); height: 300px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px; margin-bottom: 16px;">
+                            💼 IMAGEN: Oficina moderna - 3 personas trabajando, computadoras, reunión
+                        </div>
+
+                        <div class="description-example">
+                            <strong>🌟 Ejemplo de Descripción Completa:</strong>
+                            <p><em>"En esta fotografía veo una oficina moderna donde varias personas están trabajando.</em></p>
+                            <p><em><strong>Lugar:</strong> Es una oficina muy moderna y luminosa. Hay ventanas grandes que dejan entrar mucha luz natural. El espacio es abierto y amplio.</em></p>
+                            <p><em><strong>Personas:</strong> Hay tres personas. Dos mujeres y un hombre. Todos llevan ropa profesional. Una mujer lleva una blusa blanca, el hombre lleva camisa y corbata.</em></p>
+                            <p><em><strong>Objetos:</strong> Veo varios computadores portátiles en los escritorios. También hay papeles, café y teléfonos. Los escritorios son modernos y blancos.</em></p>
+                            <p><em><strong>Acciones:</strong> Parece que están en una reunión de trabajo. El hombre está explicando algo mientras las mujeres escuchan con atención. Una de ellas está tomando notas.</em></p>
+                            <p><em><strong>Hipótesis:</strong> Creo que están discutiendo un proyecto importante porque todos se ven concentrados. Probablemente sea por la mañana porque hay café en la mesa."</em></p>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top: 32px;">❓ Preguntas Típicas del Examinador:</h3>
+                    <div class="questions-box">
+                        <div class="question-item">
+                            <strong>❓ "¿Qué crees que pasó antes de esta foto?"</strong>
+                            <p><em>Respuesta:</em> "Creo que antes de la foto, la familia llegó al parque en coche y el niño corrió a jugar inmediatamente..."</p>
+                        </div>
+                        <div class="question-item">
+                            <strong>❓ "¿Cómo crees que se sienten las personas?"</strong>
+                            <p><em>Respuesta:</em> "Creo que se sienten felices y relajados. Se ve en sus caras que están disfrutando del momento..."</p>
+                        </div>
+                        <div class="question-item">
+                            <strong>❓ "¿Te gustaría estar en esta situación?"</strong>
+                            <p><em>Respuesta:</em> "Sí, me gustaría mucho porque me encanta pasar tiempo al aire libre con mi familia. Es importante..."</p>
+                        </div>
+                    </div>
+
+                    <div class="expressions-box">
+                        <strong>💬 Vocabulario útil para Tarea 3:</strong>
+                        <div class="vocab-grid">
+                            <div><strong>Lugar:</strong> al aire libre, interior, espacioso, luminoso</div>
+                            <div><strong>Personas:</strong> joven, adulto, lleva puesto, viste</div>
+                            <div><strong>Acciones:</strong> parece que, está + gerundio, se ve que</div>
+                            <div><strong>Hipótesis:</strong> probablemente, tal vez, creo que, me parece que</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Oral Tarea 4 -->
+            <div class="oral-content" id="oral-tarea4">
+                <div class="card">
+                    <h2>🎭 Tarea 4: Diálogo Simulado / Role-Play (2 min)</h2>
+                    <p><strong>Duración:</strong> 2 minutos | <strong>Tipo:</strong> Conversación informal sobre una situación cotidiana</p>
+
+                    <div class="info-box">
+                        <strong>📝 Lo que debes hacer:</strong>
+                        <p>El examinador te da una situación (eres turista, cliente, amigo, etc.). Debes mantener una conversación natural como si fuera real.</p>
+                    </div>
+
+                    <h3>🎭 Situación 1: Turista en Madrid</h3>
+                    <div class="roleplay-card">
+                        <div class="scenario-box">
+                            <strong>📝 Escenario:</strong>
+                            <p>Eres un turista en Madrid. Hablas con un local (el examinador) para pedir recomendaciones de restaurantes.</p>
+                        </div>
+
+                        <div class="dialogue-example">
+                            <h4>🌟 Diálogo Completo - Ejemplo:</h4>
+                            
+                            <div class="dialogue-line candidate">
+                                <strong>Tú (Turista):</strong> "Hola, buenas tardes. Disculpe, ¿me podría recomendar un buen restaurante por aquí cerca?"
+                            </div>
+                            
+                            <div class="dialogue-line examiner">
+                                <strong>Local:</strong> "Claro, con mucho gusto. ¿Qué tipo de comida te gusta?"
+                            </div>
+                            
+                            <div class="dialogue-line candidate">
+                                <strong>Tú:</strong> "Me gusta la comida española tradicional. Me encantan las tapas. ¿Conoce algún lugar bueno?"
+                            </div>
+                            
+                            <div class="dialogue-line examiner">
+                                <strong>Local:</strong> "Sí, hay un restaurante excelente a dos calles de aquí. Se llama 'La Taberna'. Tiene las mejores tapas de la zona."
+                            </div>
+                            
+                            <div class="dialogue-line candidate">
+                                <strong>Tú:</strong> "Perfecto. ¿Es muy caro? Es que tengo un presupuesto limitado."
+                            </div>
+                            
+                            <div class="dialogue-line examiner">
+                                <strong>Local:</strong> "No, es bastante asequible. Por unos 15-20 euros puedes comer bien."
+                            </div>
+                            
+                            <div class="dialogue-line candidate">
+                                <strong>Tú:</strong> "¡Genial! ¿Necesito reservar o puedo ir directamente?"
+                            </div>
+                            
+                            <div class="dialogue-line examiner">
+                                <strong>Local:</strong> "Si vas ahora para cenar, mejor reserva. Te doy el teléfono."
+                            </div>
+                            
+                            <div class="dialogue-line candidate">
+                                <strong>Tú:</strong> "Muy amable, muchas gracias por la recomendación. ¿Y qué platos me recomienda probar?"
+                            </div>
+                            
+                            <div class="dialogue-line examiner">
+                                <strong>Local:</strong> "Tienes que probar las croquetas y el jamón ibérico. Son especialidades de la casa."
+                            </div>
+                            
+                            <div class="dialogue-line candidate">
+                                <strong>Tú:</strong> "Perfecto, ¡suena delicioso! Muchas gracias por tu ayuda. ¡Que tengas un buen día!"
+                            </div>
+                        </div>
+
+                        <div class="expressions-box">
+                            <strong>💬 Expresiones útiles para este role-play:</strong>
+                            <div class="expressions-grid">
+                                <div>• ¿Me podría recomendar...?</div>
+                                <div>• ¿Cuáles son los platos típicos?</div>
+                                <div>• ¿A qué hora abre/cierra?</div>
+                                <div>• ¿Es necesario reservar?</div>
+                                <div>• ¿Es muy caro/asequible?</div>
+                                <div>• ¿Cómo llego allí?</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top: 32px;">🎭 Situación 2: En una Tienda de Ropa</h3>
+                    <div class="roleplay-card">
+                        <div class="scenario-box">
+                            <strong>📝 Escenario:</strong>
+                            <p>Estás en una tienda de ropa. Hablas con el vendedor (examinador) porque quieres comprar un regalo para un amigo.</p>
+                        </div>
+
+                        <div class="dialogue-example">
+                            <h4>🌟 Diálogo - Ejemplo:</h4>
+                            
+                            <div class="dialogue-line candidate">
+                                <strong>Tú (Cliente):</strong> "Buenos días. Busco un regalo para un amigo. Cumple 25 años la próxima semana."
+                            </div>
+                            
+                            <div class="dialogue-line examiner">
+                                <strong>Vendedor:</strong> "¡Felicidades para tu amigo! ¿Qué tipo de regalo tienes en mente?"
+                            </div>
+                            
+                            <div class="dialogue-line candidate">
+                                <strong>Tú:</strong> "Pensé en una camisa o una chaqueta. ¿Qué me recomienda?"
+                            </div>
+                            
+                            <div class="dialogue-line examiner">
+                                <strong>Vendedor:</strong> "Tenemos unas chaquetas de cuero muy bonitas que están de moda. ¿Qué talla usa tu amigo?"
+                            </div>
+                            
+                            <div class="dialogue-line candidate">
+                                <strong>Tú:</strong> "Creo que usa talla M. ¿Puedo ver las chaquetas? ¿Cuánto cuestan?"
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top: 32px;">🎭 Situación 3: Haciendo Planes con un Amigo</h3>
+                    <div class="roleplay-card">
+                        <div class="scenario-box">
+                            <strong>📝 Escenario:</strong>
+                            <p>Hablas con tu amigo (examinador) para hacer planes para el fin de semana.</p>
+                        </div>
+
+                        <div class="dialogue-example">
+                            <h4>🌟 Diálogo - Ejemplo:</h4>
+                            
+                            <div class="dialogue-line candidate">
+                                <strong>Tú:</strong> "¡Hola! ¿Qué planes tienes para el sábado?"
+                            </div>
+                            
+                            <div class="dialogue-line examiner">
+                                <strong>Amigo:</strong> "Todavía no tengo planes. ¿Por qué?"
+                            </div>
+                            
+                            <div class="dialogue-line candidate">
+                                <strong>Tú:</strong> "¿Te gustaría ir al cine? Hay una película nueva que quiero ver."
+                            </div>
+                            
+                            <div class="dialogue-line examiner">
+                                <strong>Amigo:</strong> "Me parece buena idea. ¿De qué trata la película?"
+                            </div>
+                            
+                            <div class="dialogue-line candidate">
+                                <strong>Tú:</strong> "Es una comedia romántica. Dicen que es muy divertida. ¿A qué hora te viene bien?"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tips-box">
+                        <strong>💡 Consejos para Tarea 4:</strong>
+                        <ul>
+                            <li>✓ <strong>Sé natural:</strong> Habla como en una conversación real</li>
+                            <li>✓ <strong>Haz preguntas:</strong> No solo respondas, también pregunta</li>
+                            <li>✓ <strong>Usa fórmulas de cortesía:</strong> "Por favor", "Gracias", "Disculpe"</li>
+                            <li>✓ <strong>Reacciona:</strong> "Qué bien", "Perfecto", "Genial"</li>
+                            <li>✓ <strong>Toma la iniciativa:</strong> No esperes que el examinador hable siempre primero</li>
+                        </ul>
+                    </div>
+
+                    <div class="expressions-box">
+                        <strong>💬 Expresiones Generales para Role-Plays:</strong>
+                        <div class="expressions-grid">
+                            <div>• ¿Me podría ayudar con...?</div>
+                            <div>• ¿Qué me recomienda?</div>
+                            <div>• Me gustaría...</div>
+                            <div>• ¿Sería posible...?</div>
+                            <div>• Muchas gracias por...</div>
+                            <div>• ¡Qué buena idea!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Section for Oral -->
+            <div class="quiz-section">
+                <div class="card">
+                    <h2>📝 Ejemplos Reales - Prueba Oral con Diálogos Completos</h2>
+                    <p style="margin-bottom: 24px; color: var(--color-text-secondary);">5 ejemplos de las 4 tareas con respuestas modelo, descripciones de fotos y diálogos completos.</p>
+                    
+                    <div id="oral-quiz"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Recursos -->
+        <div class="tab-content" id="tab-recursos">
+            <div class="card">
+                <h2>📚 Recursos Útiles</h2>
+                <p>Estos recursos te ayudarán a prepararte mejor para el examen DELE B1:</p>
+
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>📖 Instituto Cervantes</h4>
+                        <p>Modelos de examen oficiales</p>
+                        <a href="https://examenes.cervantes.es/" target="_blank">Visitar →</a>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>🎧 RTVE Podcast</h4>
+                        <p>Audio en español para practicar</p>
+                        <a href="https://www.rtve.es/play/audios/" target="_blank">Visitar →</a>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>📝 WordReference</h4>
+                        <p>Diccionario y foros</p>
+                        <a href="https://www.wordreference.com/" target="_blank">Visitar →</a>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>📚 SpanishDict</h4>
+                        <p>Gramática y conjugación</p>
+                        <a href="https://www.spanishdict.com/" target="_blank">Visitar →</a>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>🎬 YouTube - TioSpanish</h4>
+                        <p>Videos de preparación DELE</p>
+                        <a href="https://www.youtube.com/@TioSpanish" target="_blank">Visitar →</a>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>✍️ ProfeDeELE</h4>
+                        <p>Materiales y actividades</p>
+                        <a href="https://www.profedeele.es/" target="_blank">Visitar →</a>
+                    </div>
+                </div>
+
+                <div class="info-box" style="margin-top: 24px;">
+                    <strong>📅 Plan de Estudio Recomendado:</strong>
+                    <ul>
+                        <li><strong>3 meses antes:</strong> Evalúa tu nivel, identifica debilidades</li>
+                        <li><strong>2 meses antes:</strong> Practica cada prueba semanalmente</li>
+                        <li><strong>1 mes antes:</strong> Exámenes completos cronometrados</li>
+                        <li><strong>1 semana antes:</strong> Repaso y simulacros en condiciones reales</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Exam Questions Data - REAL DELE B1 QUESTIONS WITH MODEL ANSWERS
+        const examQuestions = {
+            lectura: [
+                {
+                    id: 'l1',
+                    text: 'Estimado cliente, le informamos que a partir del próximo mes nuestra tienda se mudará a una nueva ubicación en el centro de la ciudad. Nos encontrará en la calle Principal 25, con más espacio y mejor servicio. ¡Le esperamos!',
+                    question: '¿Cuál es el motivo del cambio?',
+                    options: {
+                        a: 'Falta de clientes',
+                        b: 'Mejor ubicación y más espacio',
+                        c: 'Cierre del negócio'
+                    },
+                    correct: 'b',
+                    explanation: "El texto menciona claramente 'se mudará a una nueva ubicación' y 'con más espacio y mejor servicio'. Estos son los motivos del cambio."
+                },
+                {
+                    id: 'l2',
+                    text: 'Mi querido amigo, hace años que no nos vemos. He decidido visitar la ciudad donde vives el próximo mes. ¿Podríamos pasar algunos días juntos? Me encantaría conocer tus nuevos amigos y los lugares que ahora frecuentas.',
+                    question: '¿Qué quiere el remitente?',
+                    options: {
+                        a: 'Mudarse a la ciudad',
+                        b: 'Pasar tiempo con su amigo',
+                        c: 'Conocer solo los nuevos amigos'
+                    },
+                    correct: 'b',
+                    explanation: 'La carta expresa el deseo de visitar, pasar días juntos y compartir experiencias. El objetivo principal es pasar tiempo con el amigo.'
+                },
+                {
+                    id: 'l3',
+                    text: 'Los expertos advierten que el cambio climático está afectando los patrones de lluvia en toda América Latina. Las sequías son cada vez más frecuentes, amenazando la producción agrícola de millones de personas.',
+                    question: '¿Cuál es el problema principal?',
+                    options: {
+                        a: 'La producción agrícola es muy baja',
+                        b: 'El cambio climático afecta los patrones de lluvia',
+                        c: 'Llueve demasiado'
+                    },
+                    correct: 'b',
+                    explanation: 'El primer párrafo establece el problema principal: el cambio climático está afectando los patrones de lluvia. Las sequías y la agricultura son consecuencias.'
+                },
+                {
+                    id: 'l4',
+                    text: 'Instrucciones para usar el cajero automático: 1) Introduzca su tarjeta. 2) Digite su PIN. 3) Seleccione operación. 4) Retire efectivo. 5) Retire su tarjeta. Recuerde no compartir su PIN con nadie.',
+                    question: '¿Qué se debe hacer después de seleccionar operación?',
+                    options: {
+                        a: 'Introducir la tarjeta',
+                        b: 'Retirar efectivo',
+                        c: 'Digitar el PIN'
+                    },
+                    correct: 'b',
+                    explanation: "Según las instrucciones, el paso 4 es 'Retire efectivo', que viene después del paso 3 'Seleccione operación'."
+                },
+                {
+                    id: 'l5',
+                    text: 'Hotel Paradise Beach: Ubicado frente al mar, con piscina olímpica, restaurante gourmet y spa. Ideal para vacaciones en familia o luna de miel. Habitaciones con vista al océano y servicio 24 horas.',
+                    question: '¿Qué tipos de clientes puede haber en este hotel?',
+                    options: {
+                        a: 'Solo turistas jóvenes',
+                        b: 'Familias y parejas recién casadas',
+                        c: 'Solo empresarios'
+                    },
+                    correct: 'b',
+                    explanation: "El texto menciona 'Ideal para vacaciones en familia o luna de miel', indicando que el hotel atiende a estas dos categorías de clientes."
+                }
+            ],
+            auditiva: [
+                {
+                    id: 'a1',
+                    audio_text: 'Hola María, soy Rosa. Te llamo porque mañana no podré ir a la reunión. Tengo que quedarme en casa cuidando a mi hija que está enferma. Te enviaré los documentos por email. Espero que todo esté bien contigo. ¡Nos vemos pronto!',
+                    question: '¿Por qué Rosa no puede ir a la reunión?',
+                    options: {
+                        a: 'Está enferma',
+                        b: 'Tiene que cuidar a su hija',
+                        c: 'Tiene otro compromiso'
+                    },
+                    correct: 'b',
+                    explanation: "Rosa menciona explícitamente: 'Tengo que quedarme en casa cuidando a mi hija que está enferma'. Esta es la razón por la que no puede asistir."
+                },
+                {
+                    id: 'a2',
+                    audio_text: 'Turista: ¿Qué me recomiendas para comer? Camarero: Tenemos un plato especial hoy - pastas caseras con salsa de champiñones. Turista: ¿Es picante? Camarero: No, es suave. Turista: Perfecto, pongo uno.',
+                    question: '¿Qué plato pidió el turista?',
+                    options: {
+                        a: 'Carne',
+                        b: 'Pastas caseras',
+                        c: 'Ensalada'
+                    },
+                    correct: 'b',
+                    explanation: "El camarero recomienda 'pastas caseras con salsa de champiñones' y el turista acepta diciendo 'Perfecto, pongo uno'."
+                },
+                {
+                    id: 'a3',
+                    audio_text: '¡Atención! Les recordamos que nuestra tienda cierra a las 8 de la noche. Después de esa hora no se podrá entrar. Visite nuestras ofertas especiales en la sección de ropa. Gracias por elegir nuestra tienda.',
+                    question: '¿Cuándo cierra la tienda?',
+                    options: {
+                        a: 'A las 6 de la noche',
+                        b: 'A las 8 de la noche',
+                        c: 'A las 10 de la noche'
+                    },
+                    correct: 'b',
+                    explanation: "El anuncio dice claramente: 'nuestra tienda cierra a las 8 de la noche'."
+                },
+                {
+                    id: 'a4',
+                    audio_text: 'Entrevistador: ¿Cuántos años de experiencia tienes en este tipo de trabajo? Candidato: Bueno, empecé a trabajar en esta área hace 10 años. Primero trabajé como asistente y luego fui ascendido a coordinador.',
+                    question: '¿Cuál fue su primer puesto?',
+                    options: {
+                        a: 'Coordinador',
+                        b: 'Asistente',
+                        c: 'Gerente'
+                    },
+                    correct: 'b',
+                    explanation: "El candidato dice: 'Primero trabajé como asistente y luego fui ascendido a coordinador'. Asistente fue su primer puesto."
+                },
+                {
+                    id: 'a5',
+                    audio_text: 'Mamá: ¿Cómo estuvo tu primer día de clase? Hijo: ¡Genial! Hice amigos nuevos y el profesor es muy simpático. Pero hay mucha tarea. Mamá: Entiendo, pero seguro que te acostumbras pronto.',
+                    question: '¿Cuál fue la impresión general del hijo?',
+                    options: {
+                        a: 'Negativa',
+                        b: 'Positiva',
+                        c: 'Indiferente'
+                    },
+                    correct: 'b',
+                    explanation: "El hijo dice '¡Genial!' y menciona aspectos positivos (amigos nuevos, profesor simpático). Aunque hay mucha tarea, su impresión general es positiva."
+                }
+            ],
+            escritura: [
+                {
+                    id: 'e1',
+                    task: 'Tarea 1 - Interacción escrita (correo/mensaje)',
+                    question: "Tu amigo te escribe: '¿Qué hiciste el fin de semana? ¿Visitaste el museo?' ¿Cuántas palabras debes escribir?",
+                    options: {
+                        a: '50-80 palabras',
+                        b: '100-120 palabras',
+                        c: '150-200 palabras'
+                    },
+                    correct: 'b',
+                    explanation: 'Tarea 1 (interacción) = 100-120 palabras. Tarea 2 (expresión) = 150-200. Esta diferencia es crítica para la puntuación.'
+                },
+                {
+                    id: 'e2',
+                    task: 'Tarea 1 - Estructura de correo',
+                    question: 'Debes responder un correo de un amigo. ¿Cuál es la estructura correcta?',
+                    options: {
+                        a: 'Solo párrafos sin orden específica',
+                        b: 'Saludo + respuesta a cada pregunta + cierre amable',
+                        c: 'Directo sin saludo, solo el contenido'
+                    },
+                    correct: 'b',
+                    explanation: 'Correos B1 requieren: saludo (Hola/Querido), responder TODAS las preguntas, cierre (Un abrazo/Saludos). Estructura = puntos extra.'
+                },
+                {
+                    id: 'e3',
+                    task: 'Tarea 2 - Elegir tema',
+                    question: 'En Tarea 2, ¿cuántas opciones de tema tienes?',
+                    options: {
+                        a: '1 tema obligatorio',
+                        b: '2 opciones - escoges 1',
+                        c: '3 opciones - escoges 1'
+                    },
+                    correct: 'b',
+                    explanation: 'Tarea 2 siempre ofrece 2 opciones (blog, carta, comentario, etc.). Elige el tema donde dominas mejor el vocabulario.'
+                },
+                {
+                    id: 'e4',
+                    task: 'Tarea 2 - Conectadores',
+                    question: "¿Conectador para conclusión? 'El cambio climático es grave...___... necesitamos actuar hoy'",
+                    options: {
+                        a: 'Sin embargo',
+                        b: 'Por lo tanto',
+                        c: 'Además'
+                    },
+                    correct: 'b',
+                    explanation: "'Por lo tanto' introduce conclusión lógica. 'Además' suma ideas, 'Sin embargo' contrasta. Conectadores correctos = mejor puntuación."
+                },
+                {
+                    id: 'e5',
+                    task: 'Tarea 2 - Número de palabras',
+                    question: 'En Tarea 2 escribes sobre París. ¿Número mínimo de palabras?',
+                    options: {
+                        a: '100 palabras',
+                        b: '150 palabras',
+                        c: '200 palabras'
+                    },
+                    correct: 'b',
+                    explanation: 'Tarea 2 = 150-200 palabras (mínimo 150 para puntos completos). Contar palabras es importante. La mayoría de candidatos escribe muy poco.'
+                }
+            ],
+            oral: [
+                {
+                    id: 'o1',
+                    task_type: 'Tarea 1 - Presentación',
+                    theme: 'Un momento importante en tu vida',
+                    question: 'Evalúa esta respuesta modelo. ¿Qué elementos incluye?',
+                    options: {
+                        a: 'Solo cuenta qué pasó',
+                        b: 'Introducción + desarrollo (qué, cuándo, por qué, sentimientos) + conclusión',
+                        c: 'Solo opinión sin detalles'
+                    },
+                    correct: 'b',
+                    explanation: "Respuesta modelo (3-4 min): 'Buenos días/tardes. Me gustaría hablarles sobre un momento que cambió mi vida: cuando comencé mis estudios universitarios. Este evento fue importante porque marcó el inicio de una nueva etapa. Siempre soñé con asistir a la universidad, y finalmente logré mi objetivo. Fue en septiembre de 2020. Lo que más me emocionó fue el sentimiento de logro. Después de años de dedicación en la escuela secundaria, todo valió la pena. Mi familia estaba tan orgullosa como yo. En la universidad conocí personas increíbles de diferentes países. Esto amplió mis horizontes y me enseñó a pensar de manera diferente. Sin embargo, también fue desafiante. Los primeros meses fueron difíciles. Pero con el tiempo, me adapté. En conclusión, creo que este fue uno de los momentos más importantes de mi vida. Recomiendo a otros jóvenes que persigan sus estudios superiores.'"
+                },
+                {
+                    id: 'o2',
+                    task_type: 'Tarea 2 - Conversación con examinador',
+                    theme: 'Diálogo sobre tu presentación',
+                    question: '¿Cómo debe ser tu respuesta en la conversación?',
+                    options: {
+                        a: 'Solo "Sí" o "No"',
+                        b: 'Respuestas completas con detalles y ejemplos',
+                        c: 'Respuestas muy largas sin pausar'
+                    },
+                    correct: 'b',
+                    explanation: "Ejemplo de diálogo: Examinador: '¿Cuándo fue exactamente ese momento importante en tu vida?' Candidato: 'Fue en septiembre de 2020. Recuerdo perfectamente ese día porque recibí un email de la universidad con la noticia de mi aceptación. Estaba nervioso pero muy feliz.' [Respuesta completa con detalles específicos]. Examinador: '¿Y cómo se sintieron tus padres?' Candidato: 'Mis padres estaban increíblemente felices y orgullosos. Mi madre lloró de alegría. Fue un momento muy especial para toda la familia.' [Detalles emocionales y ejemplos concretos]."
+                },
+                {
+                    id: 'o3',
+                    task_type: 'Tarea 3 - Descripción de foto',
+                    scenario: 'Familia en una playa',
+                    question: '¿Qué estructura sigue esta descripción de foto?',
+                    options: {
+                        a: 'Solo describir lo que ve',
+                        b: 'Introducción + lugar + personas + objetos + acciones + hipótesis',
+                        c: 'Solo opinión personal'
+                    },
+                    correct: 'b',
+                    explanation: "Descripción modelo completa (2-3 min): 'En esta imagen puedo ver a una familia disfrutando de un día en la playa. [INTRODUCCIÓN] El lugar es una playa hermosa con arena blanca y mar azul de fondo. Hay palmeras y cielo despejado. [LUGAR] Las personas que veo son cuatro: dos adultos y dos niños. Todos están sonriendo. El padre lleva un traje de baño azul y la madre usa un vestido colorido. [PERSONAS] Hay varios objetos: veo un paraguas para el sol, toallas, y una nevera portátil. [OBJETOS] Parece que la familia acaba de llegar o está a punto de entrar al agua. Los niños corren hacia el mar. [ACCIONES] Creo que probablemente sea un día de vacaciones durante el verano. La familia definitivamente está disfrutando de su tiempo libre. [HIPÓTESIS]'"
+                },
+                {
+                    id: 'o4',
+                    task_type: 'Tarea 3 - Descripción de foto',
+                    scenario: 'Personas trabajando en una oficina',
+                    question: '¿Qué vocabulario es esencial para describir una oficina?',
+                    options: {
+                        a: 'Solo colores',
+                        b: 'Lugar, personas, objetos (computadoras, escritorios), acciones profesionales',
+                        c: 'Solo emociones'
+                    },
+                    correct: 'b',
+                    explanation: "Descripción modelo (2-3 min): 'En esta fotografía veo una oficina moderna donde varias personas están trabajando. El lugar es una oficina muy moderna y luminosa. Hay ventanas grandes que dejan entrar mucha luz natural. El espacio es abierto y amplio. Las personas que veo son tres. Dos mujeres y un hombre. Todos llevan ropa profesional. Una mujer lleva una blusa blanca, el hombre lleva camisa y corbata. Veo varios computadores portátiles en los escritorios. También hay papeles, café y teléfonos. Parece que están en una reunión de trabajo. El hombre está explicando algo mientras las mujeres escuchan con atención. Creo que están discutiendo un proyecto importante porque todos se ven concentrados.'"
+                },
+                {
+                    id: 'o5',
+                    task_type: 'Tarea 4 - Diálogo simulado',
+                    scenario: 'Turista pidiendo recomendaciones',
+                    question: 'En un role-play, ¿qué debes hacer?',
+                    options: {
+                        a: 'Solo responder',
+                        b: 'Preguntar y responder naturalmente, tomar iniciativa',
+                        c: 'Esperar que el examinador hable siempre'
+                    },
+                    correct: 'b',
+                    explanation: "Diálogo completo modelo (2 min): Turista: 'Hola, disculpa. Soy turista en esta ciudad y es mi primer día. ¿Me podrías recomendar un buen lugar para comer?' Local: '¡Claro! Bienvenido. Depende de qué tipo de comida te gusta. Si quieres comida local, te recomiendo El Mesón del Pueblo.' Turista: 'Me interesa mucho la comida local. ¿Está muy lejos de aquí?' Local: 'No, está a cinco minutos a pie. Es en esa calle hacia allá.' Turista: '¿Qué platos me recomiendas específicamente?' Local: 'Prueba la sopa de mariscos - es la especialidad. También recomiendo las empanadas locales.' Turista: '¿Es necesario hacer una reserva?' Local: 'Generalmente no. El personal es muy simpático.' Turista: '¡Muchas gracias de verdad!' Local: '¡De nada! Espero que disfrutes tu estadía!' [Diálogo natural con preguntas y respuestas]"
+                }
+            ]
+        };
+
+        // Tab Navigation System
+        function initTabs() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const tabName = button.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons and contents
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding content
+                    button.classList.add('active');
+                    document.getElementById(`tab-${tabName}`).classList.add('active');
+                });
+            });
+        }
+
+        // Quiz System
+        function createQuiz(examType, questions) {
+            const container = document.getElementById(`${examType}-quiz`);
+            if (!container) return;
+
+            questions.forEach((q, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.className = 'question-card';
+                
+                // Build text/audio section if available
+                let contentSection = '';
+                if (q.text) {
+                    contentSection = `<div style="background: var(--color-bg-3); padding: var(--space-16); border-radius: var(--radius-base); margin-bottom: var(--space-16); border-left: 4px solid var(--color-primary);"><strong>Texto:</strong><p style="margin-top: var(--space-8); line-height: 1.6;">${q.text}</p></div>`;
+                }
+                if (q.audio_text) {
+                    contentSection = `<div style="background: var(--color-bg-1); padding: var(--space-16); border-radius: var(--radius-base); margin-bottom: var(--space-16); border-left: 4px solid var(--color-primary);"><strong>🎧 Audio (transcripción):</strong><p style="margin-top: var(--space-8); line-height: 1.6; font-style: italic;">${q.audio_text}</p></div>`;
+                }
+                if (q.situation) {
+                    contentSection = `<div style="background: var(--color-bg-2); padding: var(--space-16); border-radius: var(--radius-base); margin-bottom: var(--space-16); border-left: 4px solid var(--color-warning);"><strong>📝 Situación:</strong><p style="margin-top: var(--space-8); line-height: 1.6;">${q.situation}</p>${q.instructions ? `<p style="margin-top: var(--space-8); color: var(--color-text-secondary); font-size: var(--font-size-sm);"><em>${q.instructions}</em></p>` : ''}</div>`;
+                }
+                
+                questionCard.innerHTML = `
+                    <div class="question-number">${q.task_type || q.theme || 'Questão'} - ${index + 1} de ${questions.length}</div>
+                    ${contentSection}
+                    <div class="question-text">${q.question}</div>
+                    <div class="options">
+                        <button class="option-button" data-question="${q.id}" data-option="a">A) ${q.options.a}</button>
+                        <button class="option-button" data-question="${q.id}" data-option="b">B) ${q.options.b}</button>
+                        <button class="option-button" data-question="${q.id}" data-option="c">C) ${q.options.c}</button>
+                    </div>
+                    <div class="explanation" id="explanation-${q.id}" style="display: none;"></div>
+                `;
+                container.appendChild(questionCard);
+
+                // Add click handlers to options
+                const optionButtons = questionCard.querySelectorAll('.option-button');
+                optionButtons.forEach(button => {
+                    button.addEventListener('click', () => handleAnswer(q, button, optionButtons));
+                });
+            });
+        }
+
+        function handleAnswer(question, clickedButton, allButtons) {
+            const selectedOption = clickedButton.getAttribute('data-option');
+            const isCorrect = selectedOption === question.correct;
+            const explanationDiv = document.getElementById(`explanation-${question.id}`);
+
+            // Disable all buttons
+            allButtons.forEach(btn => btn.disabled = true);
+
+            // Mark correct and incorrect
+            allButtons.forEach(btn => {
+                const option = btn.getAttribute('data-option');
+                if (option === question.correct) {
+                    btn.classList.add('correct');
+                } else if (option === selectedOption && !isCorrect) {
+                    btn.classList.add('incorrect');
+                }
+            });
+
+            // Show explanation
+            if (isCorrect) {
+                explanationDiv.className = 'explanation correct';
+                explanationDiv.innerHTML = `<strong>✅ Correto!</strong> ${question.explanation}`;
+            } else {
+                explanationDiv.className = 'explanation incorrect';
+                explanationDiv.innerHTML = `<strong>❌ Incorreto.</strong> A resposta correta é <strong>${question.correct.toUpperCase()}</strong>. ${question.explanation}`;
+            }
+            explanationDiv.style.display = 'block';
+        }
+
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
+
+            const diff = tomorrow - now;
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown').textContent = 
+                `⏰ ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')} hasta mañana`;
+        }
+
+        // Oral Sub-Navigation System
+        function initOralTabs() {
+            const oralNavButtons = document.querySelectorAll('.oral-nav-button');
+            const oralContents = document.querySelectorAll('.oral-content');
+
+            oralNavButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const oralTabName = button.getAttribute('data-oral-tab');
+                    
+                    // Remove active class from all buttons and contents
+                    oralNavButtons.forEach(btn => btn.classList.remove('active'));
+                    oralContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding content
+                    button.classList.add('active');
+                    document.getElementById(oralTabName).classList.add('active');
+                });
+            });
+        }
+
+        // Initialize everything
+        document.addEventListener('DOMContentLoaded', () => {
+            initTabs();
+            initOralTabs();
+            createQuiz('lectura', examQuestions.lectura);
+            createQuiz('auditiva', examQuestions.auditiva);
+            createQuiz('escritura', examQuestions.escritura);
+            createQuiz('oral', examQuestions.oral);
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        });
+    </script>
+</body>
+</html>
